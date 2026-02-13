@@ -18,4 +18,4 @@ SELECT ap.city,
        a.*
 FROM airport_and_flight_details a 
 JOIN {{ ref('prep_airports') }} ap 
-ON a.origin_airport = ap.faa;
+ON a.origin_airport = ap.faa
